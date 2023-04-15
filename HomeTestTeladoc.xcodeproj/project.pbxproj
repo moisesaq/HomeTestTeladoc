@@ -14,6 +14,10 @@
 		DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */; };
 		DB1ACD0229EA3C3A0013B805 /* HomeTestTeladocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD0129EA3C3A0013B805 /* HomeTestTeladocUITests.swift */; };
 		DB1ACD0429EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD0329EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift */; };
+		DB1ACD1229EA3E490013B805 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB1ACD1129EA3E490013B805 /* Alamofire */; };
+		DB1ACD1529EA400A0013B805 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DB1ACD1429EA400A0013B805 /* RxMoya */; };
+		DB1ACD1829EA421F0013B805 /* AppMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1729EA421F0013B805 /* AppMoyaProvider.swift */; };
+		DB1ACD1A29EA43D50013B805 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1929EA43D50013B805 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		DB1ACCFD29EA3C3A0013B805 /* HomeTestTeladocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTestTeladocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1ACD0129EA3C3A0013B805 /* HomeTestTeladocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocUITests.swift; sourceTree = "<group>"; };
 		DB1ACD0329EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB1ACD1729EA421F0013B805 /* AppMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMoyaProvider.swift; sourceTree = "<group>"; };
+		DB1ACD1929EA43D50013B805 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1ACD1529EA400A0013B805 /* RxMoya in Frameworks */,
+				DB1ACD1229EA3E490013B805 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,7 @@
 		DB1ACCE529EA3C390013B805 /* HomeTestTeladoc */ = {
 			isa = PBXGroup;
 			children = (
+				DB1ACD1629EA40E70013B805 /* Repository */,
 				DB1ACCE629EA3C390013B805 /* HomeTestTeladocApp.swift */,
 				DB1ACCE829EA3C390013B805 /* ContentView.swift */,
 				DB1ACCEA29EA3C3A0013B805 /* Assets.xcassets */,
@@ -127,6 +136,15 @@
 			path = HomeTestTeladocUITests;
 			sourceTree = "<group>";
 		};
+		DB1ACD1629EA40E70013B805 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACD1729EA421F0013B805 /* AppMoyaProvider.swift */,
+				DB1ACD1929EA43D50013B805 /* AppError.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +161,10 @@
 			dependencies = (
 			);
 			name = HomeTestTeladoc;
+			packageProductDependencies = (
+				DB1ACD1129EA3E490013B805 /* Alamofire */,
+				DB1ACD1429EA400A0013B805 /* RxMoya */,
+			);
 			productName = HomeTestTeladoc;
 			productReference = DB1ACCE329EA3C390013B805 /* HomeTestTeladoc.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,10 @@
 				Base,
 			);
 			mainGroup = DB1ACCDA29EA3C390013B805;
+			packageReferences = (
+				DB1ACD1029EA3E490013B805 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DB1ACD1329EA400A0013B805 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = DB1ACCE429EA3C390013B805 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1ACD1A29EA43D50013B805 /* AppError.swift in Sources */,
 				DB1ACCE929EA3C390013B805 /* ContentView.swift in Sources */,
 				DB1ACCE729EA3C390013B805 /* HomeTestTeladocApp.swift in Sources */,
+				DB1ACD1829EA421F0013B805 /* AppMoyaProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +611,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB1ACD1029EA3E490013B805 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DB1ACD1329EA400A0013B805 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB1ACD1129EA3E490013B805 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB1ACD1029EA3E490013B805 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DB1ACD1429EA400A0013B805 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB1ACD1329EA400A0013B805 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB1ACCDB29EA3C390013B805 /* Project object */;
 }
