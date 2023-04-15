@@ -31,6 +31,7 @@
 		DB1ACD3729EA63EA0013B805 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3629EA63EA0013B805 /* LoadingView.swift */; };
 		DB1ACD3A29EA64E90013B805 /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3929EA64E90013B805 /* AlbumsView.swift */; };
 		DB1ACD3C29EA6CD90013B805 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */; };
+		DB1ACD3E29EA6FB50013B805 /* ParameterBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		DB1ACD3629EA63EA0013B805 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		DB1ACD3929EA64E90013B805 /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
 		DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
+		DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterBuilderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */,
 				DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */,
+				DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */,
 			);
 			path = HomeTestTeladocTests;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1ACD3C29EA6CD90013B805 /* AlbumTests.swift in Sources */,
+				DB1ACD3E29EA6FB50013B805 /* ParameterBuilderTests.swift in Sources */,
 				DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */,
 				DB1ACD2929EA4D7E0013B805 /* Album.swift in Sources */,
 			);
