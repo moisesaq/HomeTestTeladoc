@@ -30,6 +30,7 @@
 		DB1ACD3529EA63C80013B805 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3429EA63C80013B805 /* AlbumView.swift */; };
 		DB1ACD3729EA63EA0013B805 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3629EA63EA0013B805 /* LoadingView.swift */; };
 		DB1ACD3A29EA64E90013B805 /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3929EA64E90013B805 /* AlbumsView.swift */; };
+		DB1ACD3C29EA6CD90013B805 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		DB1ACD3429EA63C80013B805 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		DB1ACD3629EA63EA0013B805 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		DB1ACD3929EA64E90013B805 /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */,
+				DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */,
 			);
 			path = HomeTestTeladocTests;
 			sourceTree = "<group>";
@@ -201,8 +204,8 @@
 		DB1ACD2C29EA50CD0013B805 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				DB1ACD3829EA64D70013B805 /* albums */,
 				DB1ACD3229EA61BF0013B805 /* customviews */,
+				DB1ACD3829EA64D70013B805 /* albums */,
 				DB1ACCE829EA3C390013B805 /* AppView.swift */,
 			);
 			path = UI;
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1ACD3C29EA6CD90013B805 /* AlbumTests.swift in Sources */,
 				DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */,
 				DB1ACD2929EA4D7E0013B805 /* Album.swift in Sources */,
 			);
