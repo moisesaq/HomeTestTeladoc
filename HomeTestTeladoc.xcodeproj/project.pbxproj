@@ -18,6 +18,9 @@
 		DB1ACD1529EA400A0013B805 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DB1ACD1429EA400A0013B805 /* RxMoya */; };
 		DB1ACD1829EA421F0013B805 /* AppMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1729EA421F0013B805 /* AppMoyaProvider.swift */; };
 		DB1ACD1A29EA43D50013B805 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1929EA43D50013B805 /* AppError.swift */; };
+		DB1ACD1C29EA47980013B805 /* ItunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1B29EA47980013B805 /* ItunesApi.swift */; };
+		DB1ACD1F29EA4AFA0013B805 /* ParametersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */; };
+		DB1ACD2029EA4AFA0013B805 /* ParametersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,8 @@
 		DB1ACD0329EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DB1ACD1729EA421F0013B805 /* AppMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMoyaProvider.swift; sourceTree = "<group>"; };
 		DB1ACD1929EA43D50013B805 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		DB1ACD1B29EA47980013B805 /* ItunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesApi.swift; sourceTree = "<group>"; };
+		DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,10 +144,20 @@
 		DB1ACD1629EA40E70013B805 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DB1ACD1D29EA4A7E0013B805 /* provider */,
+				DB1ACD1B29EA47980013B805 /* ItunesApi.swift */,
+				DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DB1ACD1D29EA4A7E0013B805 /* provider */ = {
+			isa = PBXGroup;
+			children = (
 				DB1ACD1729EA421F0013B805 /* AppMoyaProvider.swift */,
 				DB1ACD1929EA43D50013B805 /* AppError.swift */,
 			);
-			path = Repository;
+			path = provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +301,9 @@
 				DB1ACD1A29EA43D50013B805 /* AppError.swift in Sources */,
 				DB1ACCE929EA3C390013B805 /* ContentView.swift in Sources */,
 				DB1ACCE729EA3C390013B805 /* HomeTestTeladocApp.swift in Sources */,
+				DB1ACD1C29EA47980013B805 /* ItunesApi.swift in Sources */,
 				DB1ACD1829EA421F0013B805 /* AppMoyaProvider.swift in Sources */,
+				DB1ACD1F29EA4AFA0013B805 /* ParametersBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */,
+				DB1ACD2029EA4AFA0013B805 /* ParametersBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
