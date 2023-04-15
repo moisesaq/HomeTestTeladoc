@@ -6,27 +6,31 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     @ObservedObject var albumsViewModel = AlbumsViewModel()
     
     var body: some View {
-        ZStack {
-            List {
-                ForEach(albumsViewModel.albums) { album in
-                    Text(album.collectionName)
+        NavigationView {
+            ZStack {
+                List {
+                    ForEach(albumsViewModel.albums) { album in
+                        AlbumView(album: album)
+                    }
+                }
+                if albumsViewModel.loading {
+                    LoadingView()
                 }
             }
-            if albumsViewModel.loading {
-                LoadingView()
-            }
-        }
-        .onAppear {
-            albumsViewModel.loadAlbumsOfTheBeatles()
-        }
-        .alert(isPresented: $albumsViewModel.hasError, error: albumsViewModel.error) {
-            Button("Retry") {
+            .navigationTitle("The Beatles")
+            .onAppear {
                 albumsViewModel.loadAlbumsOfTheBeatles()
+            }
+            .alert(isPresented: $albumsViewModel.hasError, error: albumsViewModel.error) {
+                Button("Retry") {
+                    albumsViewModel.loadAlbumsOfTheBeatles()
+                }
             }
         }
     }
@@ -35,6 +39,23 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct AlbumView: View {
+    @State var album: Album
+    
+    var body: some View {
+        HStack {
+            KFImage(album.getAlbumImage())
+                .frame(width: 64, height: 64)
+                .font(.system(size: 24))
+                .cornerRadius(4)
+                .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
+            Text(album.collectionName)
+                .font(.system(size: 14, weight: .semibold))
+                .padding(.horizontal)
+        }
     }
 }
 

@@ -34,13 +34,11 @@ class AlbumsViewModel: ObservableObject {
     
     private func handleSuccess(albums: [Album]) {
         hideLoading()
-        print("-> Albums: \(albums.count)")
         self.albums = albums
     }
     
     private func handleError(error: Error) {
         hideLoading()
-        print("-> Error: \(error.localizedDescription)")
         hasError = true
         self.error = AppError.customError(message: error.localizedDescription)
     }

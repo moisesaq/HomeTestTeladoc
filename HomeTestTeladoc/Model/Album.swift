@@ -16,4 +16,8 @@ struct Album: Decodable, Identifiable {
     var id: String? {
         return String(collectionId)
     }
+    
+    func getAlbumImage() -> URL? {
+        return URL(string: artworkUrl100)
+    }
 }
