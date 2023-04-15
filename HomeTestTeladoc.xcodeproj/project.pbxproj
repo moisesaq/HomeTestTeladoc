@@ -32,6 +32,10 @@
 		DB1ACD3A29EA64E90013B805 /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3929EA64E90013B805 /* AlbumsView.swift */; };
 		DB1ACD3C29EA6CD90013B805 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */; };
 		DB1ACD3E29EA6FB50013B805 /* ParameterBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */; };
+		DB534A3429EA7E06005179C7 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = DB534A3329EA7E06005179C7 /* RxBlocking */; };
+		DB534A3629EA7E4A005179C7 /* MockItunesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB534A3529EA7E4A005179C7 /* MockItunesRepository.swift */; };
+		DB534A3729EA7E5A005179C7 /* ItunesRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2229EA4C900013B805 /* ItunesRepositoryContract.swift */; };
+		DB534A3829EA7E6C005179C7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1929EA43D50013B805 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,7 @@
 		DB1ACD3929EA64E90013B805 /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
 		DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 		DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterBuilderTests.swift; sourceTree = "<group>"; };
+		DB534A3529EA7E4A005179C7 /* MockItunesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItunesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1ACD3129EA5F5A0013B805 /* Kingfisher in Frameworks */,
+				DB534A3429EA7E06005179C7 /* RxBlocking in Frameworks */,
 				DB1ACD1529EA400A0013B805 /* RxMoya in Frameworks */,
 				DB1ACD1229EA3E490013B805 /* Alamofire in Frameworks */,
 			);
@@ -153,6 +159,7 @@
 				DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */,
 				DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */,
 				DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */,
+				DB534A3529EA7E4A005179C7 /* MockItunesRepository.swift */,
 			);
 			path = HomeTestTeladocTests;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 				DB1ACD1129EA3E490013B805 /* Alamofire */,
 				DB1ACD1429EA400A0013B805 /* RxMoya */,
 				DB1ACD3029EA5F5A0013B805 /* Kingfisher */,
+				DB534A3329EA7E06005179C7 /* RxBlocking */,
 			);
 			productName = HomeTestTeladoc;
 			productReference = DB1ACCE329EA3C390013B805 /* HomeTestTeladoc.app */;
@@ -329,6 +337,7 @@
 				DB1ACD1029EA3E490013B805 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				DB1ACD1329EA400A0013B805 /* XCRemoteSwiftPackageReference "Moya" */,
 				DB1ACD2F29EA5F5A0013B805 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DB534A3229EA7E06005179C7 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = DB1ACCE429EA3C390013B805 /* Products */;
 			projectDirPath = "";
@@ -394,9 +403,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1ACD3C29EA6CD90013B805 /* AlbumTests.swift in Sources */,
+				DB534A3729EA7E5A005179C7 /* ItunesRepositoryContract.swift in Sources */,
 				DB1ACD3E29EA6FB50013B805 /* ParameterBuilderTests.swift in Sources */,
 				DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */,
 				DB1ACD2929EA4D7E0013B805 /* Album.swift in Sources */,
+				DB534A3629EA7E4A005179C7 /* MockItunesRepository.swift in Sources */,
+				DB534A3829EA7E6C005179C7 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +751,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		DB534A3229EA7E06005179C7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -756,6 +776,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB1ACD2F29EA5F5A0013B805 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		DB534A3329EA7E06005179C7 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB534A3229EA7E06005179C7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
