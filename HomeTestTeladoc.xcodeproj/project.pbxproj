@@ -20,7 +20,11 @@
 		DB1ACD1A29EA43D50013B805 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1929EA43D50013B805 /* AppError.swift */; };
 		DB1ACD1C29EA47980013B805 /* ItunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1B29EA47980013B805 /* ItunesApi.swift */; };
 		DB1ACD1F29EA4AFA0013B805 /* ParametersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */; };
-		DB1ACD2029EA4AFA0013B805 /* ParametersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */; };
+		DB1ACD2329EA4C900013B805 /* ItunesRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2229EA4C900013B805 /* ItunesRepositoryContract.swift */; };
+		DB1ACD2529EA4C9F0013B805 /* ItunesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2429EA4C9F0013B805 /* ItunesRepository.swift */; };
+		DB1ACD2829EA4D7E0013B805 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2729EA4D7E0013B805 /* Album.swift */; };
+		DB1ACD2929EA4D7E0013B805 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2729EA4D7E0013B805 /* Album.swift */; };
+		DB1ACD2B29EA4E730013B805 /* AlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2A29EA4E730013B805 /* AlbumsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		DB1ACD1929EA43D50013B805 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		DB1ACD1B29EA47980013B805 /* ItunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesApi.swift; sourceTree = "<group>"; };
 		DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersBuilder.swift; sourceTree = "<group>"; };
+		DB1ACD2229EA4C900013B805 /* ItunesRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesRepositoryContract.swift; sourceTree = "<group>"; };
+		DB1ACD2429EA4C9F0013B805 /* ItunesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesRepository.swift; sourceTree = "<group>"; };
+		DB1ACD2729EA4D7E0013B805 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		DB1ACD2A29EA4E730013B805 /* AlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1ACD1629EA40E70013B805 /* Repository */,
+				DB1ACD2629EA4D560013B805 /* Model */,
 				DB1ACCE629EA3C390013B805 /* HomeTestTeladocApp.swift */,
 				DB1ACCE829EA3C390013B805 /* ContentView.swift */,
 				DB1ACCEA29EA3C3A0013B805 /* Assets.xcassets */,
@@ -145,8 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				DB1ACD1D29EA4A7E0013B805 /* provider */,
-				DB1ACD1B29EA47980013B805 /* ItunesApi.swift */,
-				DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */,
+				DB1ACD2129EA4C640013B805 /* api */,
+				DB1ACD2229EA4C900013B805 /* ItunesRepositoryContract.swift */,
+				DB1ACD2429EA4C9F0013B805 /* ItunesRepository.swift */,
+				DB1ACD2A29EA4E730013B805 /* AlbumsResponse.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -158,6 +169,23 @@
 				DB1ACD1929EA43D50013B805 /* AppError.swift */,
 			);
 			path = provider;
+			sourceTree = "<group>";
+		};
+		DB1ACD2129EA4C640013B805 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACD1B29EA47980013B805 /* ItunesApi.swift */,
+				DB1ACD1E29EA4AFA0013B805 /* ParametersBuilder.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		DB1ACD2629EA4D560013B805 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACD2729EA4D7E0013B805 /* Album.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1ACD2329EA4C900013B805 /* ItunesRepositoryContract.swift in Sources */,
+				DB1ACD2529EA4C9F0013B805 /* ItunesRepository.swift in Sources */,
 				DB1ACD1A29EA43D50013B805 /* AppError.swift in Sources */,
 				DB1ACCE929EA3C390013B805 /* ContentView.swift in Sources */,
 				DB1ACCE729EA3C390013B805 /* HomeTestTeladocApp.swift in Sources */,
+				DB1ACD2829EA4D7E0013B805 /* Album.swift in Sources */,
 				DB1ACD1C29EA47980013B805 /* ItunesApi.swift in Sources */,
 				DB1ACD1829EA421F0013B805 /* AppMoyaProvider.swift in Sources */,
+				DB1ACD2B29EA4E730013B805 /* AlbumsResponse.swift in Sources */,
 				DB1ACD1F29EA4AFA0013B805 /* ParametersBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */,
-				DB1ACD2029EA4AFA0013B805 /* ParametersBuilder.swift in Sources */,
+				DB1ACD2929EA4D7E0013B805 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
