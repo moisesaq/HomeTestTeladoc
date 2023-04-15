@@ -24,6 +24,7 @@ class AlbumsViewModel: ObservableObject {
         loading = true
         disposable?.dispose()
         disposable = itunesRepository.getAlbums(term: "thebeatles")
+            .delay(.seconds(1), scheduler: MainScheduler.instance)
             .observe(on: MainScheduler.instance)
             .subscribe(
                 onSuccess: { self.handleSuccess(albums: $0) },

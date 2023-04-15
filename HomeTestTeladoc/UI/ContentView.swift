@@ -11,14 +11,16 @@ struct ContentView: View {
     @ObservedObject var albumsViewModel = AlbumsViewModel()
     
     var body: some View {
-        VStack {
+        ZStack {
             List {
                 ForEach(albumsViewModel.albums) { album in
                     Text(album.collectionName)
                 }
             }
+            if albumsViewModel.loading {
+                LoadingView()
+            }
         }
-        .background(.green)
         .onAppear {
             albumsViewModel.loadAlbumsOfTheBeatles()
         }
@@ -33,5 +35,16 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct LoadingView: View {
+    var body: some View {
+        ZStack {
+            Color(.systemBackground).ignoresSafeArea()
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .black))
+                .scaleEffect(3)
+        }
     }
 }
