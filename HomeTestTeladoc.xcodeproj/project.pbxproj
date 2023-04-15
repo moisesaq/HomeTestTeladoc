@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB1ACCE729EA3C390013B805 /* HomeTestTeladocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCE629EA3C390013B805 /* HomeTestTeladocApp.swift */; };
+		DB1ACCE929EA3C390013B805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCE829EA3C390013B805 /* ContentView.swift */; };
+		DB1ACCEB29EA3C3A0013B805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1ACCEA29EA3C3A0013B805 /* Assets.xcassets */; };
+		DB1ACCEE29EA3C3A0013B805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1ACCED29EA3C3A0013B805 /* Preview Assets.xcassets */; };
+		DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */; };
+		DB1ACD0229EA3C3A0013B805 /* HomeTestTeladocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD0129EA3C3A0013B805 /* HomeTestTeladocUITests.swift */; };
+		DB1ACD0429EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD0329EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB1ACCF429EA3C3A0013B805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1ACCDB29EA3C390013B805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB1ACCE229EA3C390013B805;
+			remoteInfo = HomeTestTeladoc;
+		};
+		DB1ACCFE29EA3C3A0013B805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1ACCDB29EA3C390013B805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB1ACCE229EA3C390013B805;
+			remoteInfo = HomeTestTeladoc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB1ACCE329EA3C390013B805 /* HomeTestTeladoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeTestTeladoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1ACCE629EA3C390013B805 /* HomeTestTeladocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocApp.swift; sourceTree = "<group>"; };
+		DB1ACCE829EA3C390013B805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB1ACCEA29EA3C3A0013B805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB1ACCED29EA3C3A0013B805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB1ACCF329EA3C3A0013B805 /* HomeTestTeladocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTestTeladocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocTests.swift; sourceTree = "<group>"; };
+		DB1ACCFD29EA3C3A0013B805 /* HomeTestTeladocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTestTeladocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1ACD0129EA3C3A0013B805 /* HomeTestTeladocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocUITests.swift; sourceTree = "<group>"; };
+		DB1ACD0329EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB1ACCE029EA3C390013B805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1ACCF029EA3C3A0013B805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1ACCFA29EA3C3A0013B805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB1ACCDA29EA3C390013B805 = {
+			isa = PBXGroup;
+			children = (
+				DB1ACCE529EA3C390013B805 /* HomeTestTeladoc */,
+				DB1ACCF629EA3C3A0013B805 /* HomeTestTeladocTests */,
+				DB1ACD0029EA3C3A0013B805 /* HomeTestTeladocUITests */,
+				DB1ACCE429EA3C390013B805 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB1ACCE429EA3C390013B805 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACCE329EA3C390013B805 /* HomeTestTeladoc.app */,
+				DB1ACCF329EA3C3A0013B805 /* HomeTestTeladocTests.xctest */,
+				DB1ACCFD29EA3C3A0013B805 /* HomeTestTeladocUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB1ACCE529EA3C390013B805 /* HomeTestTeladoc */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACCE629EA3C390013B805 /* HomeTestTeladocApp.swift */,
+				DB1ACCE829EA3C390013B805 /* ContentView.swift */,
+				DB1ACCEA29EA3C3A0013B805 /* Assets.xcassets */,
+				DB1ACCEC29EA3C3A0013B805 /* Preview Content */,
+			);
+			path = HomeTestTeladoc;
+			sourceTree = "<group>";
+		};
+		DB1ACCEC29EA3C3A0013B805 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACCED29EA3C3A0013B805 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB1ACCF629EA3C3A0013B805 /* HomeTestTeladocTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */,
+			);
+			path = HomeTestTeladocTests;
+			sourceTree = "<group>";
+		};
+		DB1ACD0029EA3C3A0013B805 /* HomeTestTeladocUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACD0129EA3C3A0013B805 /* HomeTestTeladocUITests.swift */,
+				DB1ACD0329EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift */,
+			);
+			path = HomeTestTeladocUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB1ACCE229EA3C390013B805 /* HomeTestTeladoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1ACD0729EA3C3A0013B805 /* Build configuration list for PBXNativeTarget "HomeTestTeladoc" */;
+			buildPhases = (
+				DB1ACCDF29EA3C390013B805 /* Sources */,
+				DB1ACCE029EA3C390013B805 /* Frameworks */,
+				DB1ACCE129EA3C390013B805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeTestTeladoc;
+			productName = HomeTestTeladoc;
+			productReference = DB1ACCE329EA3C390013B805 /* HomeTestTeladoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB1ACCF229EA3C3A0013B805 /* HomeTestTeladocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1ACD0A29EA3C3A0013B805 /* Build configuration list for PBXNativeTarget "HomeTestTeladocTests" */;
+			buildPhases = (
+				DB1ACCEF29EA3C3A0013B805 /* Sources */,
+				DB1ACCF029EA3C3A0013B805 /* Frameworks */,
+				DB1ACCF129EA3C3A0013B805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB1ACCF529EA3C3A0013B805 /* PBXTargetDependency */,
+			);
+			name = HomeTestTeladocTests;
+			productName = HomeTestTeladocTests;
+			productReference = DB1ACCF329EA3C3A0013B805 /* HomeTestTeladocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB1ACCFC29EA3C3A0013B805 /* HomeTestTeladocUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1ACD0D29EA3C3A0013B805 /* Build configuration list for PBXNativeTarget "HomeTestTeladocUITests" */;
+			buildPhases = (
+				DB1ACCF929EA3C3A0013B805 /* Sources */,
+				DB1ACCFA29EA3C3A0013B805 /* Frameworks */,
+				DB1ACCFB29EA3C3A0013B805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB1ACCFF29EA3C3A0013B805 /* PBXTargetDependency */,
+			);
+			name = HomeTestTeladocUITests;
+			productName = HomeTestTeladocUITests;
+			productReference = DB1ACCFD29EA3C3A0013B805 /* HomeTestTeladocUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB1ACCDB29EA3C390013B805 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					DB1ACCE229EA3C390013B805 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					DB1ACCF229EA3C3A0013B805 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = DB1ACCE229EA3C390013B805;
+					};
+					DB1ACCFC29EA3C3A0013B805 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = DB1ACCE229EA3C390013B805;
+					};
+				};
+			};
+			buildConfigurationList = DB1ACCDE29EA3C390013B805 /* Build configuration list for PBXProject "HomeTestTeladoc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB1ACCDA29EA3C390013B805;
+			productRefGroup = DB1ACCE429EA3C390013B805 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB1ACCE229EA3C390013B805 /* HomeTestTeladoc */,
+				DB1ACCF229EA3C3A0013B805 /* HomeTestTeladocTests */,
+				DB1ACCFC29EA3C3A0013B805 /* HomeTestTeladocUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB1ACCE129EA3C390013B805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1ACCEE29EA3C3A0013B805 /* Preview Assets.xcassets in Resources */,
+				DB1ACCEB29EA3C3A0013B805 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1ACCF129EA3C3A0013B805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1ACCFB29EA3C3A0013B805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB1ACCDF29EA3C390013B805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1ACCE929EA3C390013B805 /* ContentView.swift in Sources */,
+				DB1ACCE729EA3C390013B805 /* HomeTestTeladocApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1ACCEF29EA3C3A0013B805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1ACCF929EA3C3A0013B805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1ACD0429EA3C3A0013B805 /* HomeTestTeladocUITestsLaunchTests.swift in Sources */,
+				DB1ACD0229EA3C3A0013B805 /* HomeTestTeladocUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB1ACCF529EA3C3A0013B805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB1ACCE229EA3C390013B805 /* HomeTestTeladoc */;
+			targetProxy = DB1ACCF429EA3C3A0013B805 /* PBXContainerItemProxy */;
+		};
+		DB1ACCFF29EA3C3A0013B805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB1ACCE229EA3C390013B805 /* HomeTestTeladoc */;
+			targetProxy = DB1ACCFE29EA3C3A0013B805 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB1ACD0529EA3C3A0013B805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB1ACD0629EA3C3A0013B805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB1ACD0829EA3C3A0013B805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeTestTeladoc/Preview Content\"";
+				DEVELOPMENT_TEAM = DMHCR22HB7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moises.HomeTestTeladoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB1ACD0929EA3C3A0013B805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeTestTeladoc/Preview Content\"";
+				DEVELOPMENT_TEAM = DMHCR22HB7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moises.HomeTestTeladoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB1ACD0B29EA3C3A0013B805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DMHCR22HB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moises.HomeTestTeladocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeTestTeladoc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HomeTestTeladoc";
+			};
+			name = Debug;
+		};
+		DB1ACD0C29EA3C3A0013B805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DMHCR22HB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moises.HomeTestTeladocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeTestTeladoc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HomeTestTeladoc";
+			};
+			name = Release;
+		};
+		DB1ACD0E29EA3C3A0013B805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DMHCR22HB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moises.HomeTestTeladocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HomeTestTeladoc;
+			};
+			name = Debug;
+		};
+		DB1ACD0F29EA3C3A0013B805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DMHCR22HB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moises.HomeTestTeladocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HomeTestTeladoc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB1ACCDE29EA3C390013B805 /* Build configuration list for PBXProject "HomeTestTeladoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1ACD0529EA3C3A0013B805 /* Debug */,
+				DB1ACD0629EA3C3A0013B805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1ACD0729EA3C3A0013B805 /* Build configuration list for PBXNativeTarget "HomeTestTeladoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1ACD0829EA3C3A0013B805 /* Debug */,
+				DB1ACD0929EA3C3A0013B805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1ACD0A29EA3C3A0013B805 /* Build configuration list for PBXNativeTarget "HomeTestTeladocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1ACD0B29EA3C3A0013B805 /* Debug */,
+				DB1ACD0C29EA3C3A0013B805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1ACD0D29EA3C3A0013B805 /* Build configuration list for PBXNativeTarget "HomeTestTeladocUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1ACD0E29EA3C3A0013B805 /* Debug */,
+				DB1ACD0F29EA3C3A0013B805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB1ACCDB29EA3C390013B805 /* Project object */;
+}
