@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var albumsViewModel = AlbumsViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            List {
+                ForEach(albumsViewModel.albums) { album in
+                    Text(album.collectionName)
+                }
+            }
         }
-        .padding()
+        .background(.green)
+        .onAppear {
+            albumsViewModel.loadAlbumsOfTheBeatles()
+        }
+        .alert(isPresented: $albumsViewModel.hasError, error: albumsViewModel.error) {
+            Button("Retry") {
+                albumsViewModel.loadAlbumsOfTheBeatles()
+            }
+        }
     }
 }
 

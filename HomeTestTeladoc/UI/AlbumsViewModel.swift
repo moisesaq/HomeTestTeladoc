@@ -14,7 +14,7 @@ class AlbumsViewModel: ObservableObject {
     @Published var loading = false
     @Published var albums: [Album] = []
     @Published var hasError = false
-    @Published var error: Error?
+    @Published var error: AppError?
     
     init(itunesRepository: ItunesRepositoryContract! = ItunesRepository()) {
         self.itunesRepository = itunesRepository
@@ -33,13 +33,15 @@ class AlbumsViewModel: ObservableObject {
     
     private func handleSuccess(albums: [Album]) {
         hideLoading()
+        print("-> Albums: \(albums.count)")
         self.albums = albums
     }
     
     private func handleError(error: Error) {
         hideLoading()
+        print("-> Error: \(error.localizedDescription)")
         hasError = true
-        self.error = error
+        self.error = AppError.customError(message: error.localizedDescription)
     }
     
     private func hideLoading() {
