@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB1ACCE729EA3C390013B805 /* HomeTestTeladocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCE629EA3C390013B805 /* HomeTestTeladocApp.swift */; };
-		DB1ACCE929EA3C390013B805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCE829EA3C390013B805 /* ContentView.swift */; };
+		DB1ACCE929EA3C390013B805 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCE829EA3C390013B805 /* AppView.swift */; };
 		DB1ACCEB29EA3C3A0013B805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1ACCEA29EA3C3A0013B805 /* Assets.xcassets */; };
 		DB1ACCEE29EA3C3A0013B805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1ACCED29EA3C3A0013B805 /* Preview Assets.xcassets */; };
 		DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */; };
@@ -27,6 +27,9 @@
 		DB1ACD2B29EA4E730013B805 /* AlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2A29EA4E730013B805 /* AlbumsResponse.swift */; };
 		DB1ACD2E29EA511E0013B805 /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2D29EA511E0013B805 /* AlbumsViewModel.swift */; };
 		DB1ACD3129EA5F5A0013B805 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DB1ACD3029EA5F5A0013B805 /* Kingfisher */; };
+		DB1ACD3529EA63C80013B805 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3429EA63C80013B805 /* AlbumView.swift */; };
+		DB1ACD3729EA63EA0013B805 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3629EA63EA0013B805 /* LoadingView.swift */; };
+		DB1ACD3A29EA64E90013B805 /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD3929EA64E90013B805 /* AlbumsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,7 @@
 /* Begin PBXFileReference section */
 		DB1ACCE329EA3C390013B805 /* HomeTestTeladoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeTestTeladoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1ACCE629EA3C390013B805 /* HomeTestTeladocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestTeladocApp.swift; sourceTree = "<group>"; };
-		DB1ACCE829EA3C390013B805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB1ACCE829EA3C390013B805 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		DB1ACCEA29EA3C3A0013B805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB1ACCED29EA3C3A0013B805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB1ACCF329EA3C3A0013B805 /* HomeTestTeladocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTestTeladocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +69,9 @@
 		DB1ACD2729EA4D7E0013B805 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		DB1ACD2A29EA4E730013B805 /* AlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsResponse.swift; sourceTree = "<group>"; };
 		DB1ACD2D29EA511E0013B805 /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
+		DB1ACD3429EA63C80013B805 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		DB1ACD3629EA63EA0013B805 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		DB1ACD3929EA64E90013B805 /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,9 +201,9 @@
 		DB1ACD2C29EA50CD0013B805 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DB1ACD3829EA64D70013B805 /* albums */,
 				DB1ACD3229EA61BF0013B805 /* customviews */,
-				DB1ACCE829EA3C390013B805 /* ContentView.swift */,
-				DB1ACD2D29EA511E0013B805 /* AlbumsViewModel.swift */,
+				DB1ACCE829EA3C390013B805 /* AppView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -205,8 +211,19 @@
 		DB1ACD3229EA61BF0013B805 /* customviews */ = {
 			isa = PBXGroup;
 			children = (
+				DB1ACD3429EA63C80013B805 /* AlbumView.swift */,
+				DB1ACD3629EA63EA0013B805 /* LoadingView.swift */,
 			);
 			path = customviews;
+			sourceTree = "<group>";
+		};
+		DB1ACD3829EA64D70013B805 /* albums */ = {
+			isa = PBXGroup;
+			children = (
+				DB1ACD3929EA64E90013B805 /* AlbumsView.swift */,
+				DB1ACD2D29EA511E0013B805 /* AlbumsViewModel.swift */,
+			);
+			path = albums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,12 +370,15 @@
 				DB1ACD2529EA4C9F0013B805 /* ItunesRepository.swift in Sources */,
 				DB1ACD2E29EA511E0013B805 /* AlbumsViewModel.swift in Sources */,
 				DB1ACD1A29EA43D50013B805 /* AppError.swift in Sources */,
-				DB1ACCE929EA3C390013B805 /* ContentView.swift in Sources */,
+				DB1ACD3A29EA64E90013B805 /* AlbumsView.swift in Sources */,
+				DB1ACCE929EA3C390013B805 /* AppView.swift in Sources */,
 				DB1ACCE729EA3C390013B805 /* HomeTestTeladocApp.swift in Sources */,
+				DB1ACD3529EA63C80013B805 /* AlbumView.swift in Sources */,
 				DB1ACD2829EA4D7E0013B805 /* Album.swift in Sources */,
 				DB1ACD1C29EA47980013B805 /* ItunesApi.swift in Sources */,
 				DB1ACD1829EA421F0013B805 /* AppMoyaProvider.swift in Sources */,
 				DB1ACD2B29EA4E730013B805 /* AlbumsResponse.swift in Sources */,
+				DB1ACD3729EA63EA0013B805 /* LoadingView.swift in Sources */,
 				DB1ACD1F29EA4AFA0013B805 /* ParametersBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
