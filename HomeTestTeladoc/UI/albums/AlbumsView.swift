@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AlbumsView: View {
-    @ObservedObject var albumsViewModel = AlbumsViewModel()
+    @ObservedObject var albumsViewModel = AlbumsViewModel(itunesRepository: ItunesRepository())
     
     var body: some View {
         ZStack {

@@ -16,7 +16,7 @@ class AlbumsViewModel: ObservableObject {
     @Published var hasError = false
     @Published var error: AppError?
     
-    init(itunesRepository: ItunesRepositoryContract! = ItunesRepository()) {
+    init(itunesRepository: ItunesRepositoryContract) {
         self.itunesRepository = itunesRepository
     }
     
@@ -30,6 +30,10 @@ class AlbumsViewModel: ObservableObject {
                 onSuccess: { self.handleSuccess(albums: $0) },
                 onFailure: { self.handleError(error: $0) }
             )
+    }
+    
+    func setFakeValue() {
+        albums = [Album(collectionId: 123, collectionName: "", artistName: "", artworkUrl100: "")]
     }
     
     private func handleSuccess(albums: [Album]) {
