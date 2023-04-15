@@ -36,6 +36,7 @@
 		DB534A3629EA7E4A005179C7 /* MockItunesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB534A3529EA7E4A005179C7 /* MockItunesRepository.swift */; };
 		DB534A3729EA7E5A005179C7 /* ItunesRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD2229EA4C900013B805 /* ItunesRepositoryContract.swift */; };
 		DB534A3829EA7E6C005179C7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ACD1929EA43D50013B805 /* AppError.swift */; };
+		DB534A3A29EA7F02005179C7 /* ItunesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB534A3929EA7F02005179C7 /* ItunesRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 		DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterBuilderTests.swift; sourceTree = "<group>"; };
 		DB534A3529EA7E4A005179C7 /* MockItunesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItunesRepository.swift; sourceTree = "<group>"; };
+		DB534A3929EA7F02005179C7 /* ItunesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +158,10 @@
 		DB1ACCF629EA3C3A0013B805 /* HomeTestTeladocTests */ = {
 			isa = PBXGroup;
 			children = (
+				DB534A3B29EA8470005179C7 /* repository */,
 				DB1ACCF729EA3C3A0013B805 /* HomeTestTeladocTests.swift */,
 				DB1ACD3B29EA6CD90013B805 /* AlbumTests.swift */,
 				DB1ACD3D29EA6FB50013B805 /* ParameterBuilderTests.swift */,
-				DB534A3529EA7E4A005179C7 /* MockItunesRepository.swift */,
 			);
 			path = HomeTestTeladocTests;
 			sourceTree = "<group>";
@@ -237,6 +239,15 @@
 				DB1ACD2D29EA511E0013B805 /* AlbumsViewModel.swift */,
 			);
 			path = albums;
+			sourceTree = "<group>";
+		};
+		DB534A3B29EA8470005179C7 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				DB534A3929EA7F02005179C7 /* ItunesRepositoryTests.swift */,
+				DB534A3529EA7E4A005179C7 /* MockItunesRepository.swift */,
+			);
+			path = repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1ACD3C29EA6CD90013B805 /* AlbumTests.swift in Sources */,
+				DB534A3A29EA7F02005179C7 /* ItunesRepositoryTests.swift in Sources */,
 				DB534A3729EA7E5A005179C7 /* ItunesRepositoryContract.swift in Sources */,
 				DB1ACD3E29EA6FB50013B805 /* ParameterBuilderTests.swift in Sources */,
 				DB1ACCF829EA3C3A0013B805 /* HomeTestTeladocTests.swift in Sources */,
